@@ -6,7 +6,6 @@ import {
   SiJavascript,
   SiReact,
   SiRedux,
-  SiWebpack,
   SiWordpress,
   SiHtml5,
   SiSpring,
@@ -20,11 +19,8 @@ import {
   SiPython,
   SiSpringboot,
   SiGraphql,
-  SiPostgresql,
   SiJenkins,
-  SiFlutter
 } from 'react-icons/si';
-import { TbBrandAuth0 } from 'react-icons/tb';
 
 export type stacksProps = {
   [key: string]: JSX.Element;

@@ -36,7 +36,7 @@ const CodeBlock = ({
 }: CodeProps) => {
   const [isCopied, setIsCopied] = useState<boolean>(false);
   // eslint-disable-next-line unused-imports/no-unused-vars
-  const [value, copy] = useCopyToClipboard();
+  const [_value, copy] = useCopyToClipboard();
   const match = /language-(\w+)/.exec(className || '');
 
   const handleCopy = (code: string) => {

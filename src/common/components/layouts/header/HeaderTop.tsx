@@ -22,7 +22,7 @@ const HeaderTop = () => {
   const router = useRouter();
 
   const menus = MENU_ITEMS.filter(
-    (item) => item.isShow && item.title !== 'Home'
+    (item) => item.isShow && item.title !== 'Home',
   );
 
   return (
@@ -30,7 +30,7 @@ const HeaderTop = () => {
       <div className='hidden lg:flex gap-5 items-center justify-between py-8 mx-8'>
         <div className='flex items-center gap-5'>
           <Image
-            src='/images/harika.jpg'
+            src='/images/harika.jpeg'
             alt='Harika Chadalavada'
             width={40}
             height={40}
@@ -66,7 +66,7 @@ const HeaderTop = () => {
                   className={clsx(
                     'text-neutral-700 hover:text-neutral-800 dark:text-neutral-400 hover:dark:text-neutral-100',
                     router.pathname === menu?.href &&
-                      '!text-neutral-800 dark:!text-neutral-100'
+                      '!text-neutral-800 dark:!text-neutral-100',
                   )}
                 >
                   <div>{menu.title}</div>

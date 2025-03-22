@@ -4,7 +4,6 @@ import querystring from 'querystring';
 
 const CLIENT_ID = process.env.WAKATIME_CLIENT_ID;
 const CLIENT_SECRET = process.env.WAKATIME_CLIENT_SECRET;
-const REFRESH_TOKEN = process.env.WAKATIME_CLIENT_REFRESH_TOKEN;
 
 const STATS_ENDPOINT = 'https://wakatime.com/api/v1/users/current/stats';
 const ALL_TIME_SINCE_TODAY =
@@ -24,7 +23,7 @@ export const getAccessToken = async (): Promise<string> => {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
-    }
+    },
   );
 
   return response.data;
@@ -37,7 +36,7 @@ export const getReadStats = async (): Promise<{
   const res = await getAccessToken();
   const access_token = res.substring(
     res.indexOf('=') + 1,
-    res.lastIndexOf('&refresh_token')
+    res.lastIndexOf('&refresh_token'),
   );
 
   const response = await axios.get(`${STATS_ENDPOINT}/last_7_days`, {
@@ -94,7 +93,7 @@ export const getALLTimeSinceToday = async (): Promise<{
   const res = await getAccessToken();
   const access_token = res.substring(
     res.indexOf('=') + 1,
-    res.lastIndexOf('&refresh_token')
+    res.lastIndexOf('&refresh_token'),
   );
 
   const response = await axios.get(ALL_TIME_SINCE_TODAY, {

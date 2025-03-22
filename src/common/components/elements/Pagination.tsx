@@ -45,7 +45,7 @@ const Pagination: React.FC<PaginationProps> = ({
           page === '...' && '!bg-transparent !cursor-default',
           currentPage === page
             ? 'bg-sky-600 text-white'
-            : 'bg-neutral-200 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200'
+            : 'bg-neutral-200 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200',
         )}
       >
         {page}

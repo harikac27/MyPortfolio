@@ -30,12 +30,12 @@ const CareerCard = ({
 
   const durationYears = differenceInYears(
     new Date(end_date || Date.now()),
-    new Date(start_date)
+    new Date(start_date),
   );
   const durationMonths =
     (differenceInMonths(
       new Date(end_date || Date.now()),
-      new Date(start_date)
+      new Date(start_date),
     ) %
       12) +
     1;

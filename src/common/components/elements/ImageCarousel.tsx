@@ -56,11 +56,11 @@ const ImageCarousel = ({ images, interval = 3000 }: ImageCarouselProps) => {
       if (slider && slider.innerSlider && slider.innerSlider.list) {
         slider.innerSlider.list.removeEventListener(
           'mouseenter',
-          stopScrolling
+          stopScrolling,
         );
         slider.innerSlider.list.removeEventListener(
           'mouseleave',
-          startScrolling
+          startScrolling,
         );
       }
     };

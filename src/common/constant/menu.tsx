@@ -2,12 +2,10 @@ import { BiRocket as ContactIcon } from 'react-icons/bi';
 import {
   BsEnvelopeAtFill as EmailIcon,
   BsGithub as GithubIcon,
-  BsInstagram as InstagramIcon,
   BsLinkedin as LinkedinIcon,
 } from 'react-icons/bs';
 import {
   FiCoffee as ProjectIcon,
-  FiCpu as DashboardIcon,
   FiPocket as HomeIcon,
   FiUser as ProfileIcon,
 } from 'react-icons/fi';

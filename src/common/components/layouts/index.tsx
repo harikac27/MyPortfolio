@@ -33,7 +33,7 @@ const Layout = ({ children }: LayoutProps) => {
       <div
         className={clsx(
           'max-w-6xl mx-auto lg:px-8',
-          isDarkTheme ? 'dark:text-darkText' : ''
+          isDarkTheme ? 'dark:text-darkText' : '',
         )}
       >
         {isFullPageHeader ? (

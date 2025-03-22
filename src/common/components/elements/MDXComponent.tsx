@@ -43,10 +43,10 @@ const MDXComponent = ({ children }: MarkdownRendererProps) => {
             {...props}
           />
         ),
-        ul: ({ ordered, ...props }) => (
+        ul: ({ ordered: _ordered, ...props }) => (
           <ul className='pl-10 space-y-3 list-disc pb-2' {...props} />
         ),
-        ol: ({ ordered, ...props }) => (
+        ol: ({ ordered: _ordered, ...props }) => (
           <ol className='pl-10 space-y-3 list-decimal pb-2' {...props} />
         ),
         code: (props) => <CodeBlock {...props} />,

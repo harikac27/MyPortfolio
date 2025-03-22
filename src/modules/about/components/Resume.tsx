@@ -4,7 +4,7 @@ import GoogleDocsEmbed from '@/common/components/elements/GoogleDocsEmbed';
 
 const Resume = () => {
   const RESUME_URL =
-    'https://docs.google.com/document/d/1cA6fPD5yMW0rekFK_5qFFkgVLDJ9VszS4rEC_AqWa_g/edit?tab=t.0';
+    'https://docs.google.com/document/d/1cA6fPD5yMW0rekFK_5qFFkgVLDJ9VszS4rEC_AqWa_g/edit?usp=sharing';
 
   return (
     <div className='space-y-5'>
@@ -12,14 +12,19 @@ const Resume = () => {
         href={RESUME_URL}
         target='_blank'
         passHref
-        className='flex w-fit items-center gap-2 rounded-lg border border-neutral-400 px-4 py-2.5 text-sm text-neutral-600 transition-all duration-300 hover:gap-3 hover:border-neutral-500 hover:text-neutral-700 dark:border-neutral-600 dark:bg-neutral-900 dark:text-neutral-400 hover:dark:border-neutral-300 hover:dark:text-neutral-300'
+        className='
+          flex w-fit items-center gap-2 rounded-lg border 
+          border-neutral-400 px-4 py-2.5 text-sm text-neutral-600 
+          transition-all duration-300 hover:gap-3 hover:border-neutral-500 
+          hover:text-neutral-700 dark:border-neutral-600 dark:bg-neutral-900 
+          dark:text-neutral-400 hover:dark:border-neutral-300 hover:dark:text-neutral-300'
         data-umami-event='Download Resume'
       >
         <DownloadIcon />
         <span>Download Resume</span>
       </Link>
 
-      <GoogleDocsEmbed src='https://docs.google.com/document/d/1cA6fPD5yMW0rekFK_5qFFkgVLDJ9VszS4rEC_AqWa_g/edit?tab=t.0' />
+      <GoogleDocsEmbed src='https://docs.google.com/document/d/1cA6fPD5yMW0rekFK_5qFFkgVLDJ9VszS4rEC_AqWa_g/edit?usp=sharing' />
     </div>
   );
 };

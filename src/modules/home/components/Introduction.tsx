@@ -17,10 +17,14 @@ const Introduction = () => {
       </div>
 
       <p className='leading-[1.8] md:leading-loose mt-6 text-neutral-800 dark:text-neutral-300'>
-       Proficient software Engineer with deep expertise in backend development and practical experience in front-end integration. Specialized in architecting robust backend systems and enhancing their interaction with front-end platforms to create seamless, scalable web services.
-       Proficient in leveraging cloud technologies; I excel in collaborative settings, driving the development of high-performance solutions that streamline and strengthen business operations.
+        Proficient software Engineer with deep expertise in backend development
+        and practical experience in front-end integration. Specialized in
+        architecting robust backend systems and enhancing their interaction with
+        front-end platforms to create seamless, scalable web services.
+        Proficient in leveraging cloud technologies; I excel in collaborative
+        settings, driving the development of high-performance solutions that
+        streamline and strengthen business operations.
       </p>
-
     </section>
   );
 };

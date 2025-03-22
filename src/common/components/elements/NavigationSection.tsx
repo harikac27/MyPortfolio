@@ -39,7 +39,9 @@ const NavigationSection = memo(
         )}
       </div>
     );
-  }
+  },
 );
+
+NavigationSection.displayName = 'NavigationSection';
 
 export default NavigationSection;
