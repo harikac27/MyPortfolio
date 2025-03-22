@@ -4,5 +4,12 @@
       "memory": 1024,
       "maxDuration": 10
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://www.harikachadalavada.com/$1",
+      "permanent": true
+    }
+  ]
 }
